@@ -65,9 +65,12 @@ noble.on('discover', function(peripheral) {
             characteristics[3].on('read', function(data, isNotification) {
               //console.log('on read, notification: '+isNotification)
               //console.log(data.toString('hex'));
-              console.log('Temperature:' + parseTemperature(data.toString('hex'),6));
-              console.log('Temperature:' + parseTemperature(data.toString('hex'),10));
-              console.log('Temperature:' + parseTemperature(data.toString('hex'),14));
+              console.log('Temperature: ' + parseTemperature(data.toString('hex'),6));
+              console.log('Temperature: ' + parseTemperature(data.toString('hex'),10));
+              console.log('Temperature: ' + parseTemperature(data.toString('hex'),14));
+              console.log('Temperature: ' + parseTemperature(data.toString('hex'),24));
+              console.log('Temperature: ' + parseTemperature(data.toString('hex'),28));
+              console.log('Temperature: ' + parseTemperature(data.toString('hex'),32));
             });
           });
 
