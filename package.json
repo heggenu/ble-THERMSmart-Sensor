@@ -1,0 +1,26 @@
+{
+  "name": "ble-THERMSmart-Sensor",
+  "version": "0.1.0",
+  "description": "A Node.js library for the THERMSmart Bluetooth Smart Thermometer",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heggenu/ble-THERMSmart-Sensor.git"
+  },
+  "keywords": [
+    "thermsmart"
+  ],
+  "author": "Henrik Andersson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heggenu/ble-THERMSmart-Sensor/issues"
+  },
+  "dependencies": {
+    "noble": "^1.1.0",
+  },
+  "devDependencies": {
+  }
+}
