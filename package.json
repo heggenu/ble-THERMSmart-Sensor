@@ -19,7 +19,7 @@
     "url": "https://github.com/heggenu/ble-THERMSmart-Sensor/issues"
   },
   "dependencies": {
-    "noble": "^1.1.0",
+    "noble": "^1.1.0"
   },
   "devDependencies": {
   }
