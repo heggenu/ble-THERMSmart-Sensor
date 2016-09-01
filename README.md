@@ -1,5 +1,5 @@
 # ble-THERMSmart
-THERMSmart Bluetooth Smart Thermometer
+Node.js Code for THERMSmart Bluetooth Smart Thermometer
 
 ![THERMSmart](images/Rubicson_THERMSmart.jpg?raw=true)
 
