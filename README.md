@@ -1,7 +1,7 @@
 # ble-THERMSmart
 THERMSmart Bluetooth Smart Thermometer
 
-![THERMSmart](images/Rubicson_THERMSmart.jpg)
+![THERMSmart](images/Rubicson_THERMSmart.jpg?raw=true)
 
 Non Official api for the THERMSmart Bluetooth Smart Thermometer
 
