@@ -1,7 +1,7 @@
 var noble = require('noble');
 var parseTemperature = require('./parseTemperature')
 
-var pizzaServiceUuid = 'fff0';
+var thermSmartServiceUuid = 'fff0';
 
 noble.on('stateChange', function(state) {
   if (state === 'poweredOn') {
@@ -11,7 +11,7 @@ noble.on('stateChange', function(state) {
     // scan for all services (uses more time and power).
     //
     console.log('scanning...');
-    noble.startScanning([pizzaServiceUuid], false);
+    noble.startScanning([thermSmartServiceUuid], false);
   }
   else {
     noble.stopScanning();
@@ -40,7 +40,7 @@ noble.on('discover', function(peripheral) {
     // services and characteristics of interest.
     //
 
-    peripheral.discoverServices([pizzaServiceUuid], function(err, services) {
+    peripheral.discoverServices([thermSmartServiceUuid], function(err, services) {
       services.forEach(function(service) {
         //
         // This must be the service we were looking for.
