@@ -1,6 +1,8 @@
 # ble-THERMSmart
 THERMSmart Bluetooth Smart Thermometer
 
+![THERMSmart Bluetooth Smart Thermometer](https://github.com/heggenu/ble-THERMSmart-Sensor/blob/master/images/Rubicson_THERMSmart.jpg)
+
 Non Official api for the THERMSmart Bluetooth Smart Thermometer
 
 Test code in test.js
