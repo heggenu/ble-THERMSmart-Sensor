@@ -54,17 +54,19 @@ noble.on('discover', function(peripheral) {
 
           console.log(characteristics[3].uuid);
 
+          /*
           setTimeout(function() {
             console.log('Blink the LED and sleep for 5 seconds');
             var data=new Buffer([-43]);
             characteristics[2].write(data, true, function(error){}); // data is a buffer, withoutResponse is true|false
           }, 5000);
+          */
 
           characteristics[3].once('notify', function(state) {
-            console.log('we got notified!')
-            characteristics[3].on('read', function(data, isNotification) {
+            //console.log('we got notified!')
+            characteristics[3].on('data', function(data, isNotification) {
               //console.log('on read, notification: '+isNotification)
-              //console.log(data.toString('hex'));
+              console.log(''); //data.toString('hex'));
               console.log('Temperature: ' + parseTemperature(data.toString('hex'),6));
               console.log('Temperature: ' + parseTemperature(data.toString('hex'),10));
               console.log('Temperature: ' + parseTemperature(data.toString('hex'),14));
